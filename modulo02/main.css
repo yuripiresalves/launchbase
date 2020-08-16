@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap";
+
 :root {
     --color-background: #282a36;
     --color-primary: #50fa7b;
@@ -17,6 +19,7 @@ html, body {
 body {
     background: var(--color-background);
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 header {
@@ -43,6 +46,57 @@ header div a:hover {
     transition: color .2s;
 }
 
+#wrapper {
+    text-align: center;
+    padding: 2rem;
+}
+
+#wrapper img {
+    border-radius: 50%;
+    border: 2px solid var(--color-primary);
+    margin-bottom: 2rem;
+    width: 25rem;
+}
+
+#wrapper h1 {
+    font-size: 4.2rem;
+    line-height: 5.2rem;
+}
+
+#wrapper h2 {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    font-weight: normal;
+    margin-top: .8rem;
+}
+
+#wrapper p {
+    max-width: 50rem;
+    margin: 2rem auto 0;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+#wrapper p a {
+    color: var(--color-primary);
+}
+
+footer {
+    text-align: center;
+}
+
+footer a+a {
+    margin-left: 1rem;
+}
+
+footer a img {
+    width: 5rem;
+    padding: 1rem;
+
+}
+
+
+
 @media (min-width: 700px) {
     :root {
         font-size: 62.5%;
@@ -55,5 +109,9 @@ header div a:hover {
         margin: 0 .6rem;
         padding: 1rem;
         text-decoration: none;
+    }
+
+    #wrapper img {
+        width: 30rem;
     }
 }
