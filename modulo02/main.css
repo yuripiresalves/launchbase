@@ -35,15 +35,14 @@ header div {
 header div a {
     color: white;
     font-size: 2.4rem;
-    line-height: 2.8rem;
-    margin: 0 .6rem;
+    line-height: 3.4rem;
     padding: 1rem;
     text-decoration: none;
 }
 
 header div a:hover {
     color: var(--color-primary);
-    transition: color .2s;
+    /* transition: color .2s; */
 }
 
 #wrapper {
@@ -79,10 +78,28 @@ header div a:hover {
 
 #wrapper p a {
     color: var(--color-primary);
+    text-decoration: none;
+    transition: .2s;
+}
+
+#wrapper p a:hover {
+    color: #0ef348;
 }
 
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+}
+
+footer a:hover img {
+    transform: translateY(-.5rem);
+    transition: transform .2s;
+    border-bottom: 1px solid var(--color-primary);
 }
 
 footer a+a {
@@ -92,7 +109,6 @@ footer a+a {
 footer a img {
     width: 5rem;
     padding: 1rem;
-
 }
 
 
