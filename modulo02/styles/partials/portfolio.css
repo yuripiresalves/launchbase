@@ -2,8 +2,10 @@
     width: 90vw;
     /* max-width: 40rem; */
     margin: 0 auto;
-    display: grid;grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 .cards p {
@@ -36,6 +38,8 @@
     border-radius: 2rem;
     text-align: center;
 }
+
+
 
 /*------------------ MODAL ------------------- */
 
@@ -83,6 +87,11 @@
         margin: 0 .6rem;
         padding: 1rem;
         text-decoration: none;
+    }
+
+    #wrapper h1 {
+        font-size: 3.4rem;
+        line-height: 4.4rem;
     }
 
     .cards {
