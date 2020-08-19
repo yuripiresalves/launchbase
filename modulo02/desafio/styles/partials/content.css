@@ -82,6 +82,57 @@
     border-radius: 2.4rem;
 }
 
+/* -------------------------MODAL------------------------- */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+
+.modal {
+    position: relative;
+    top: 0;
+    margin: 5vh auto;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+}
+
+.modal-close,
+.modal-fullscreen {
+    color: black;
+    position: absolute;
+    padding: .5rem;
+
+}   
+
+.modal-close:hover,
+.modal-fullscreen:hover {
+    cursor: pointer;
+}
+
+.modal-fullscreen {
+    right: 0;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    margin-top: 5vh;
+    position: absolute;
+}
+
+/* -------MODAL.ACTIVE---------- */
+
+.modal-overlay.active {
+    visibility: visible;
+}
+
+
 @media(min-width: 1000px) {
     .cards {
         grid-template-columns: 1fr 1fr 1fr;
