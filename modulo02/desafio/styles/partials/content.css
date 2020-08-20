@@ -33,16 +33,16 @@
     transition: .2s;
 }
 
-#starter:hover {
+.card#starter:hover {
     border: 2px solid var(--color-primary);
 }
 
-#launchbase:hover {
-    border: 2px solid  #F69627;
+.card#launchbase:hover {
+    border: 2px solid  var(--color-launchbase);
 }
 
-#gostack:hover {
-    border: 2px solid #01D660;
+.card#gostack:hover {
+    border: 2px solid var(--color-gostack);
 }
 
 .card .card-image img {
@@ -59,9 +59,6 @@
 .card .card-info {
     padding: 3.2rem ;
     padding-top: 5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
     max-width: 30rem;
     margin: 0 auto;
 }
@@ -70,16 +67,25 @@
     font-size: 1.4rem;
 }
 
-.card-info p+p {
-    margin-left: 2.4rem;
+.card-price {
+    width: 100%;
+    padding: .5rem;
+    margin-top: 3.2rem;
+    border-radius: 2.4rem;
+    color: var(--color-background-darker);
+    font-weight: bold;
 }
 
-.card-price {
-    background-color: var(--color-background-darker);
-    filter: brightness(90%);
+.card-price#starter {
+    background-color: var(--color-primary);
+}
 
-    padding: .5rem;
-    border-radius: 2.4rem;
+.card-price#launchbase {
+    background-color: var(--color-launchbase);
+}
+
+.card-price#gostack {
+    background-color: var(--color-gostack);
 }
 
 /* -------------------------MODAL------------------------- */
@@ -113,6 +119,9 @@
 .modal-close:hover,
 .modal-fullscreen:hover {
     cursor: pointer;
+    transform: scale(1.3);
+    transition: .2s ease-in-out;
+    color: var(--color-primary-darker);
 }
 
 .modal-fullscreen {
@@ -140,7 +149,17 @@ iframe {
 
 
 
-@media(min-width: 1000px) {
+@media(min-width: 1131px) {
+    :root {
+        font-size: 62.5%;
+    }
+
+    #wrapper-contents .title h1 {
+        text-align: center;
+        padding: 4.2rem 0;
+        font-size: 3.4rem;
+    }
+
     .cards {
         grid-template-columns: 1fr 1fr 1fr;
     }
