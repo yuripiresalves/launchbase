@@ -83,3 +83,23 @@ footer a svg {
 footer a:hover svg {
     fill: var(--color-primary);
 }
+
+@media (min-width: 700px) {
+
+    #wrapper img {
+        width: 30rem;
+    } 
+
+    #wrapper p {
+        font-size: 2.4rem;
+        line-height: 3.4rem;
+    }
+
+    main {
+        max-width: 80vw;
+    }
+
+    footer a:hover svg {
+        transition: .2s;
+    }
+}
