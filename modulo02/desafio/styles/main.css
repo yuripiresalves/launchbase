@@ -2,6 +2,9 @@
     --color-background: #282a36;
     --color-background-darker: #20222e;
     --color-primary: #916BEA;
+    --color-primary-darker: #7a56cc;
+    --color-launchbase: #F69627;
+    --color-gostack: #01D660;
     font-size: 60%;
 }
 
