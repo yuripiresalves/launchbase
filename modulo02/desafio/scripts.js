@@ -26,5 +26,3 @@ modalOverlay.querySelector('.modal-close').addEventListener('click', () => {
     modalFullscreen.querySelector('span').innerText = "fullscreen"
     modalOverlay.querySelector('iframe').src = ""
 })
-
-// test 
