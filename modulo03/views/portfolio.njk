@@ -1,15 +1,14 @@
 {% extends "layout.njk" %}
 
 {% block head %}
-<title>Portfolio | Yuri Alves</title>
+    <title>Portfolio | Yuri Alves</title>
 
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="/styles/partials/portfolio.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/partials/portfolio.css">
 
 {% endblock %}
 
 {% block content %}
-
 
     <div id="wrapper">
         <h1>Portfólio</h1>
@@ -17,95 +16,24 @@
 
     <section class="cards">
 
-        <div class="card" id="rBmxbKa0hVo">
+        {% for item in items %}
 
-            <div class="card-image-container">
-                <img src="https://img.youtube.com/vi/rBmxbKa0hVo/hqdefault.jpg" alt="Imagem">
-            </div>
-            <div class="card-content">
-                <p>PHANTOM OF THE OPERA LIV MOON</p>
-            </div>
-            <div class="card-info">
-                <p>04 minutos</p>
-                <p class="card-price">Free</p>
-            </div>
+            <div class="card" id="{{item.id}}">
 
-        </div>
+                <div class="card-image-container">
+                    <img src="https://img.youtube.com/vi/{{item.id}}/hqdefault.jpg" alt="Imagem de {{item.title}}">
+                </div>
+                <div class="card-content">
+                    <p>{{item.title}}</p>
+                </div>
+                <div class="card-info">
+                    <p>{{item.duration}}</p>
+                    <p class="card-price">{{item.price}}</p>
+                </div>
 
-        <div class="card" id="SnXkhkEvNIM">
-
-            <div class="card-image-container">
-                <img src="https://img.youtube.com/vi/SnXkhkEvNIM/maxresdefault.jpg" alt="Imagem">
-            </div>
-            <div class="card-content">
-                <p>光るなら／Goose house</p>
-            </div>
-            <div class="card-info">
-                <p>04 minutos</p>
-                <p class="card-price">Free</p>
             </div>
 
-        </div>
-
-        <div class="card" id="4XOWE1G31aU">
-
-            <div class="card-image-container">
-                <img src="https://img.youtube.com/vi/4XOWE1G31aU/maxresdefault.jpg" alt="Imagem">
-            </div>
-            <div class="card-content">
-                <p>明日があるさ／坂本九（Cover）</p>
-            </div>
-            <div class="card-info">
-                <p>06 minutos</p>
-                <p class="card-price">Free</p>
-            </div>
-
-        </div>
-
-        <div class="card" id="GgwUenaQqlM">
-
-            <div class="card-image-container">
-                <img src="https://img.youtube.com/vi/GgwUenaQqlM/maxresdefault.jpg" alt="Imagem">
-            </div>
-            <div class="card-content">
-                <p>ヒロアカ「Hero too」ミュージックビデオ(MV)／雄英高校ヒーロー科1年A組／『僕のヒーローアカデミア』4期文化祭編／MY HEROACADEMIA</p>
-            </div>
-            <div class="card-info">
-                <p>04 minutos</p>
-                <p class="card-price">Free</p>
-            </div>
-
-        </div>
-
-        <div class="card" id="XtqGr-km0XQ">
-
-            <div class="card-image-container">
-                <img src="https://img.youtube.com/vi/XtqGr-km0XQ/maxresdefault.jpg" alt="Imagem">
-            </div>
-            <div class="card-content">
-                <p>LiSA - unlasting / THE FIRST TAKE</p>
-            </div>
-            <div class="card-info">
-                <p>05 minutos</p>
-                <p class="card-price">Free</p>
-            </div>
-
-        </div>
-
-        <div class="card" id="7aw5laBVQ1w">
-
-            <div class="card-image-container">
-                <img src="https://img.youtube.com/vi/7aw5laBVQ1w/maxresdefault.jpg" alt="Imagem">
-            </div>
-            <div class="card-content">
-                <p>BABYMETAL - LIVE AT THE FORUM Trailer</p>
-            </div>
-            <div class="card-info">
-                <p>02 minutos</p>
-                <p class="card-price">Free</p>
-            </div>
-
-        </div>
+        {% endfor %}
 
     </section>
 
@@ -117,13 +45,12 @@
             </a>
 
             <div class="modal-content">
-                <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
             </div>
         </div>
-
 
     </div>
 
     <script src="scripts.js"></script>
 
-    {% endblock %}
+{% endblock %}
