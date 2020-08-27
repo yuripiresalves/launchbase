@@ -15,6 +15,7 @@
 .card {
     background-color: var(--color-secondary);
     cursor: pointer;
+    display: grid;
 }
 
 .card-image-container img {
@@ -29,6 +30,7 @@
 .card-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .card-price {
