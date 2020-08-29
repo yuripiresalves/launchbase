@@ -20,8 +20,11 @@
 
             <div class="card" id="{{item.id}}">
 
-                <div class="card-image-container">
+                <div class="card-image-container {{ 'featured-wrapper' if item.featured }}">
                     <img src="https://img.youtube.com/vi/{{item.id}}/hqdefault.jpg" alt="Imagem de {{item.title}}">
+                    {% if item.featured %}
+                        <div class="featured">Destaque</div>
+                    {% endif %}
                 </div>
                 <div class="card-content">
                     <p>{{item.title}}</p>

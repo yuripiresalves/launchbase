@@ -42,9 +42,24 @@
     text-align: center;
 }
 
+/* --------------- FEATURED -------------------- */
+.card-image-container.featured-wrapper {
+    position: relative;
+}
+
+.featured {
+    background: rgb(251, 255, 0);
+    color: #111111;
+    font-size: 1.4rem;
+    padding: .2rem .8rem;
+    border-radius: 2rem;
+    position: absolute;
+    right: .5rem;
+    top: -1rem;
+}
 
 
-/*------------------ MODAL ------------------- */
+/* ------------------ MODAL ------------------- */
 
 .modal-overlay {
     background-color: rgba(0, 0, 0, 0.7);
