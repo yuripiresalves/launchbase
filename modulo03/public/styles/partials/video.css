@@ -1,0 +1,42 @@
+.video {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+}
+
+#wrapper.video h1 {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+}
+
+.video p {
+    font-size: 1.8rem;
+}
+
+.card {
+    cursor: default;
+}
+
+.card-video-container {
+    position: relative;
+    height: 42.2rem;
+}
+
+.card-video-container iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+@media(max-width: 800px) {
+    .video {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .card-video-container {
+        position: relative;
+        padding-top: 62.5%;
+    }
+}
