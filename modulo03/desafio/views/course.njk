@@ -1,0 +1,40 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/styles/partials/courses.css">
+
+    <title>{{course.title}} | Rocketseat</title>
+{% endblock head %}
+
+{% block content %}
+
+    <div id="wrapper-contents">
+        <div class="title">
+            <h1>{{course.title}}</h1>
+        </div>
+
+        <div class="cards" style="display: block;">
+
+            <div class="card" id="{{course.id}}">
+                <div class="card-content">
+                    <div class="card-image">
+                        <img src="{{course.img_url}}" alt="Logo {{course.title}}">
+                    </div>
+                    <div class="card-title">
+                        <h1>{{course.title}}</h1>
+                    </div>
+                    <div class="card-info">
+                        <p>{{course.modules}}</p>
+                        <p class="card-price" id="{{course.id}}">{{course.price}}</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/scripts-course.js"></script>
+
+{% endblock content %}

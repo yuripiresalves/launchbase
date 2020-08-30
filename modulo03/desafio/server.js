@@ -10,11 +10,30 @@ server.set('view engine', 'njk')
 
 nunjukcs.configure('views', {
     express: server,
-    autoescape: false
+    autoescape: false,
+    noCache: true
 })
 
 server.get("/", (req, res) => {
+    return res.redirect("courses")
+})
+
+server.get("/courses", (req, res) => {
     return res.render("courses", { courses })
+})
+
+server.get("/courses/:id", (req, res) => {
+    const id = req.params.id
+
+    const course = courses.find((course) => {
+        return course.id == id
+    }) 
+
+    if (!course) {
+        return res.status(404).render("not-found")
+    }
+
+    return res.render("course", { course })
 })
 
 server.get("/about", (req, res) => {
