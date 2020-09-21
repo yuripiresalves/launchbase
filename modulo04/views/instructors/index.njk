@@ -1,5 +1,47 @@
 {% extends "layout.njk" %}
 
+{% block head %}
+<link rel="stylesheet" href="styles/partials/instructors.css">
+{% endblock head %}
+
 {% block content %}
-Instructors
+    <div class="card">
+        <section 
+            class="avatar" 
+            style="background: url(https://source.unsplash.com/collection/2315391/900x900) center center / cover;">
+        </section>
+        <section class="details">
+            <h3>Detalhes</h3>
+
+            <div class="item">
+                <div>Intrutor</div>
+                <div>Niizinha00</div>
+            </div>
+
+            <div class="item">
+                <div>Idade</div>
+                <div>14</div>
+            </div>
+
+            <div class="item">
+                <div>Sexo</div>
+                <div>Menininha</div>
+            </div>
+
+            <div class="item">
+                <div>Acompanhamento</div>
+                <div>
+                    <span>Todos</span>
+                    <span>que</span>
+                    <span>você</span>
+                    <span>imaginar</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Desde</div>
+                <div>26/11/2005</div>
+            </div>
+        </section>
+    </div>
 {% endblock content %}
