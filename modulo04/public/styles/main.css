@@ -1,7 +1,9 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap";
 
 :root {
+    font-size: 62.5%;
     --primary-color: #7159c1;
+    --secondary-color: #F7DF1E;
 }
 
 * {
@@ -18,17 +20,17 @@ body {
 
 header {
     background-color: white;
-    padding: 32px;
+    padding: 3.2rem;
     width: 100%;
     text-align: center;
 }
 
 .links {
-    font-size: 22px;
+    font-size: 2.2rem;
 }
 
 .links a + a {
-    margin-left: 32px;
+    margin-left: 3.2rem;
 }
 
 .links a {
@@ -49,11 +51,11 @@ header {
 .links a::after {
     content: "";
     width: 0;
-    height: 2px;
+    height: .2rem;
     background-color: var(--primary-color);
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: -.2rem;
 }
 
 .links a:hover::after {
