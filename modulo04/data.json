@@ -1,0 +1,13 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "https://google.com",
+      "name": "Yuuuuu",
+      "birth": 109226275200000,
+      "gender": "M",
+      "services": "geografia, ciências",
+      "created_at": 1600976987096
+    }
+  ]
+}
