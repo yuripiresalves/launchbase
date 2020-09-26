@@ -1,0 +1,22 @@
+{
+  "teachers": [
+    {
+      "avatar_url": "https://pbs.twimg.com/profile_images/1259657871777771522/PnT5MAU5_400x400.jpg",
+      "name": "niia",
+      "birth": "124312-04-23",
+      "escolaridade": "doutorado",
+      "classes_type": "distancia",
+      "classes": "fds"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://google.com",
+      "name": "Yuuuuu",
+      "birth": 1002412800000,
+      "escolaridade": "mestrado",
+      "classes_type": "presencial",
+      "classes": "matematica",
+      "created_at": 1601156287594
+    }
+  ]
+}
