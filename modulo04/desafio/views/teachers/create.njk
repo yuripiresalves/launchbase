@@ -5,7 +5,7 @@
 {% endblock head %}
 
 {% block content %}
-    <form class="card">
+    <form class="card" method="POST" action="/teachers">
         <section 
             class="image"
             style="background: url(https://source.unsplash.com/collection/8684183/900x900) no-repeat center center / cover">
@@ -51,15 +51,15 @@
             <div class="item">
                 <div>Tipo de aula</div>
                 <div>
-                    <span><input type="radio" name="classes_type">Presencial</span>
-                    <span><input type="radio" name="classes_type" checked>À Distância</span>
+                    <span><input type="radio" name="classes_type" value="presencial">Presencial</span>
+                    <span><input type="radio" name="classes_type" value="distancia" checked>À Distância</span>
                 </div>
             </div>
             
             <div class="item">
                 <div>Área de atuação</div>
                 <div>
-                    <input type="text" name="grade" placeholder="Separe as matérias por vírgula">
+                    <input type="text" name="classes" placeholder="Separe as matérias por vírgula">
                 </div>
             </div>
 

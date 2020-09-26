@@ -55,14 +55,14 @@
 }
 
 .details .item span {
-    background-color: yellow;
+    background-color: var(--color-secondary);
     padding: .8rem 1.6rem;
     border-radius: 16px;
     display: inline-block;
     margin-top: .8rem;
     margin-right: .4rem;
     font-size: 1.2rem;
-    color: #777777;
+    color: var(--color-primary-darker);
     text-transform: uppercase;
 }
 

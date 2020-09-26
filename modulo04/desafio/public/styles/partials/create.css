@@ -28,10 +28,10 @@
 
 .details .item {
     padding: 1.6rem 0;
-    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
-.details .item:nth-child(2) {
+.details .item:last-child {
     border: none;
 }
 
@@ -62,7 +62,7 @@
     margin-top: .8rem;
     margin-right: .4rem;
     font-size: 1.2rem;
-    color: #555555;
+    color: var(--color-primary-darker);
     text-transform: uppercase;
 }
 
@@ -71,11 +71,13 @@ input {
     width: 100%;
     outline: none;
     font-size: 1.8rem;
-    /* border: 1px solid #aaaaaa; */
+    font-weight: bold;
+    color: #555555;
 }
 
 input::placeholder {
     font-size: 1.6rem;
+    font-weight: normal;
 }
 
 select {

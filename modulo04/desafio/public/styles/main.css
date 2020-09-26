@@ -1,14 +1,16 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap";
 
 :root {
-    --color-primary: #916BEA;
-    --color-primary-darker: #7a56cc;
+    --color-primary: #43aa8b;
+    --color-primary-darker: #2a9d8f;
+    --color-secondary: #f9c74f;
     font-size: 60%;
 }
 
 * {
     margin: 0;
     padding: 0;
+    border: none;
     box-sizing: border-box;
 }
 
@@ -19,7 +21,7 @@ body {
 
 .links {
     width: 100%;
-    background-color: white;
+    background-color: var(--color-secondary);
     padding: 3.2rem;
     text-align: center;
 }
