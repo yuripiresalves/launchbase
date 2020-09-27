@@ -72,8 +72,10 @@
 
 input {
     width: 100%;
-    font-size: 1.8rem;
     outline: none;
+    font-size: 1.8rem;
+    color: #555555;
+    font-weight: bold;
 }
 
 input[type="radio"] {
@@ -83,6 +85,7 @@ input[type="radio"] {
 
 input::placeholder {
     font-size: 1.6rem;
+    font-weight: normal;
 }
 
 button {
