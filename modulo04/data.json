@@ -2,12 +2,21 @@
   "instructors": [
     {
       "id": 1,
-      "avatar_url": "https://google.com",
+      "avatar_url": "https://source.unsplash.com/collection/2315391/900x900",
       "name": "Yuuuuu",
       "birth": 109226275200000,
       "gender": "M",
       "services": "geografia, ciências",
       "created_at": 1600976987096
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://google.com",
+      "name": "nii",
+      "birth": 1132963200000,
+      "gender": "F",
+      "services": "todas",
+      "created_at": 1601298672054
     }
   ]
 }
