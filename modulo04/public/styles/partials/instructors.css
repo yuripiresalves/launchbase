@@ -68,6 +68,22 @@
     text-transform: uppercase;
 }
 
+/* ------- SHOW ------ */
+a.button {
+    padding: .8rem 3.2rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.6rem;
+    border-radius: .4rem;
+    width: 100%;
+    margin-top: 3.2rem;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+
 @media(max-width: 900px) {
     .card {
         width: 90%;
