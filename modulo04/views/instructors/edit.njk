@@ -1,0 +1,20 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/styles/partials/create.css">
+{% endblock head %}
+
+{% block content %}
+    <form class="card" method="POST" action="/instructors">
+        <section 
+            class="avatar" 
+            style="background: url(https://source.unsplash.com/collection/2315391/900x900) center center / cover;">
+        </section>
+        <section class="details">
+            <h3>Editar Instrutor</h3>
+
+            {% include 'instructors/fields.njk' %}
+            
+        </section>
+    </form>
+{% endblock content %}
