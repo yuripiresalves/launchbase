@@ -1,22 +1,44 @@
 {
   "teachers": [
     {
-      "avatar_url": "https://pbs.twimg.com/profile_images/1259657871777771522/PnT5MAU5_400x400.jpg",
-      "name": "niia",
-      "birth": "124312-04-23",
-      "escolaridade": "doutorado",
-      "classes_type": "distancia",
-      "classes": "fds"
+      "id": 1,
+      "avatar_url": "https://source.unsplash.com/collection/8684183/500x500",
+      "name": "Yuri",
+      "birth": 1002412800000,
+      "graduation": "medio",
+      "classes_type": "À Distância",
+      "classes": "matematica, fisica",
+      "created_at": 1601492652513
     },
     {
       "id": 2,
       "avatar_url": "https://google.com",
+      "name": "nii",
+      "birth": 1132963200000,
+      "graduation": "mestrado",
+      "classes_type": "Presencial",
+      "classes": "todas",
+      "created_at": 1601492703883
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://source.unsplash.com/collection/8684183/500x500",
+      "name": "lari",
+      "birth": 1126137600000,
+      "graduation": "superior",
+      "classes_type": "À Distância",
+      "classes": "matematica, fisica, todas",
+      "created_at": 1601492739874
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://source.unsplash.com/collection/8684183/500x500",
       "name": "Yuuuuu",
-      "birth": 1002412800000,
-      "escolaridade": "mestrado",
-      "classes_type": "presencial",
-      "classes": "matematica",
-      "created_at": 1601156287594
+      "birth": 39824784000000,
+      "graduation": "doutorado",
+      "classes_type": "À Distância",
+      "classes": "matematica, fisica, todas",
+      "created_at": 1601494892673
     }
   ]
 }
