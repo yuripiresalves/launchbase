@@ -99,6 +99,11 @@ button {
     cursor: pointer;
 }
 
+#form-delete button {
+    margin-top: .8rem;
+    background-color: lightcoral;
+}
+
 @media(max-width: 900px) {
     .card {
         width: 90%;
