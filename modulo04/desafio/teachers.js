@@ -110,3 +110,21 @@ exports.update = (req, res) => {
         return res.redirect(`/teachers/${id}`)
     })
 }
+
+// Delete
+exports.delete = (req, res) => {
+
+    const { id } = req.body
+
+    const filteredTeachers = data.teachers.filter((teacher) => {
+        return teacher.id != id
+    })
+
+    data.teachers = filteredTeachers
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), (err) => {
+        if(err) return res.send("Write file error!")
+
+        return res.redirect('/teachers')
+    })
+}
