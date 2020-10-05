@@ -1,67 +1,22 @@
 {
   "instructors": [
     {
-      "id": "1",
-      "avatar_url": "https://source.unsplash.com/collection/2315391/900x900",
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
       "name": "Yu",
       "birth": 1002412800000,
       "gender": "F",
-      "services": "geografia",
+      "services": "geografia, ciências, fisica, matematica",
       "created_at": 1600976987096
     },
     {
       "id": 2,
-      "avatar_url": "https://google.com",
+      "avatar_url": "https://images.unsplash.com/photo-1550345332-09e3ac987658?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
       "name": "nii",
       "birth": 1132963200000,
       "gender": "F",
       "services": "todas",
       "created_at": 1601298672054
-    },
-    {
-      "id": 3,
-      "avatar_url": "https://google.com",
-      "name": "Papel e cia",
-      "birth": 946684800000,
-      "gender": "M",
-      "services": "gdsg",
-      "created_at": 1601389930111
-    },
-    {
-      "id": 4,
-      "avatar_url": "https://source.unsplash.com/collection/8684183/500x500",
-      "name": "nii",
-      "birth": 1132963200000,
-      "gender": "F",
-      "services": "tatta",
-      "created_at": 1601390056779
-    },
-    {
-      "id": 5,
-      "avatar_url": "https://google.com",
-      "name": "Yuuuuu",
-      "birth": 109886716800000,
-      "gender": "M",
-      "services": "fsdfd",
-      "created_at": 1601392277925
-    },
-    {
-      "id": 6,
-      "avatar_url": "https://google.com",
-      "name": "Yuuuuu",
-      "birth": 109886716800000,
-      "gender": "M",
-      "services": "fsdfd",
-      "created_at": 1601392319624
-    },
-    {
-      "id": 8,
-      "avatar_url": "https://source.unsplash.com/collection/8684183/500x500",
-      "name": "niia",
-      "birth": 976579200000,
-      "gender": "F",
-      "services": "ffgtas",
-      "created_at": 1601392687286
     }
   ]
 }
