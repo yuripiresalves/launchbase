@@ -80,6 +80,87 @@ a.button {
     text-align: center;
 }
 
+a.button:hover {
+    background-color: var(--color-primary-darker);
+    transition: .2s;
+}
+
+.table-container {
+    display: block;
+    padding: 4rem;
+}
+
+.table-container table {
+    text-align: center;
+    border-spacing: 0;
+}
+
+/* .table-container thead tr th:first-child {
+    text-align: left;
+} */
+
+th {
+    font-size: 1.4rem;
+    color: #777777;
+    text-transform: uppercase;
+}
+
+td {
+    font-size: 1.6rem;
+}
+
+th, td {
+    /* text-align: center; */
+    padding: 1.6rem;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.table-container tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr td:first-child {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    align-items: center;
+}
+
+tbody tr td:first-child span {
+    width: 4rem;
+    height: 4rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+tbody tr td:nth-child(2) span {
+    padding: .8rem 1.6rem;
+    background-color: var(--color-secondary);
+    border-radius: 16px;
+    color: var(--color-primary-darker);
+    font-weight: bold;
+    margin-right: .4rem;
+    margin-top: .8rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+tbody tr td:last-child a {
+    background-color: var(--color-primary);
+    padding: .8rem 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: .4rem;
+}
+
+tbody tr td:last-child a:hover {
+    background-color: var(--color-primary-darker);
+    transition: .2s;
+}
+
 @media(max-width: 800px) {
     .card {
         width: 90%;
