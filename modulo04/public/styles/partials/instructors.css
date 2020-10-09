@@ -145,7 +145,8 @@ tbody tr td:first-child span {
     border: 2px solid white;
 }
 
-tbody tr td:last-child a {
+tbody tr td:last-child a,
+.table-container > a {
     background-color: var(--primary-color);
     padding: .8rem 1.6rem;
     text-decoration: none;
@@ -153,6 +154,11 @@ tbody tr td:last-child a {
     color: white;
     font-size: 1.2rem;
     border-radius: .4rem;
+}
+
+.table-container > a {
+    display: inline-block;
+    margin-bottom: 1.6rem;
 }
 
 .table-container thead tr th:last-child,
