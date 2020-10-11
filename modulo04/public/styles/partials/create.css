@@ -70,12 +70,16 @@
 
 /* -------- FORM ---------- */
 
-input {
+input, select {
     width: 100%;
     outline: none;
     font-size: 1.8rem;
     color: #555555;
     font-weight: bold;
+}
+
+select {
+    background-color: white;
 }
 
 input[type="radio"] {
