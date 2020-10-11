@@ -1,5 +1,28 @@
 {
-  "members": [],
+  "members": [
+    {
+      "id": 2,
+      "avatar_url": "https://pbs.twimg.com/media/Ej0AC1nU4AQKhXk?format=jpg&name=large",
+      "name": "Yui",
+      "email": "yui@gymmanager.com",
+      "birth": 934416000000,
+      "gender": "F",
+      "blood": "O-",
+      "weight": "45",
+      "height": "156"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://pbs.twimg.com/media/EjwMqUyXYAE0UIg?format=jpg&name=large",
+      "name": "Su",
+      "email": "su@gymmanager.com",
+      "birth": 866937600000,
+      "gender": "F",
+      "blood": "B-",
+      "weight": "48",
+      "height": "159"
+    }
+  ],
   "instructors": [
     {
       "id": 1,
