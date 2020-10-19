@@ -18,7 +18,7 @@
 
             </form>
 
-            <form action="/teachers?_method=DELETE" method="post">
+            <form id="form-delete" action="/teachers?_method=DELETE" method="post">
                 <input type="hidden" name="id" value="{{ teacher.id }}">
                 <button id="delete" type="submit">Deletar</button>
             </form>
@@ -27,4 +27,6 @@
         </section>
 
     </div>
+
+    {% include "confirm.njk" %}
 {% endblock content %}
