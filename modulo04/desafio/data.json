@@ -1,4 +1,24 @@
 {
+  "students": [
+    {
+      "id": 2,
+      "avatar_url": "https://pbs.twimg.com/media/Ej2rT83WoAAWZHt?format=jpg&name=large",
+      "name": "teste",
+      "email": "teste@email.com",
+      "birth": 1132963200000,
+      "grade": "9EF",
+      "hours": "6"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://pbs.twimg.com/media/Ej2rT83WoAAWZHt?format=jpg&name=large",
+      "name": "dsad",
+      "email": "fsdf@email.com",
+      "birth": 641433600000,
+      "grade": "3EM",
+      "hours": "3"
+    }
+  ],
   "teachers": [
     {
       "id": 1,
