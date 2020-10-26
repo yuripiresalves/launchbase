@@ -1,0 +1,173 @@
+.card {
+    width: 80rem;
+    min-height: 40rem;
+    background-color: white;
+    margin: 4.5rem auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, .4);
+
+    /* animation */
+    animation: up .5s ease-out;
+}
+
+@keyframes up {
+    from {
+        opacity: .5;
+        transform: translateY(15px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* ---------- DETALHES ----------- */
+.details {
+    padding: 3.2rem;
+}
+
+.details .item {
+    padding: 1.6rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.details .item:last-child {
+    border: none;
+}
+
+.details h3,
+.details .item div:nth-child(1) {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #777777;
+    letter-spacing: 1px;
+}
+
+.details h3 {
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.details .item div:nth-child(2) {
+    color: #555555;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.details .item span {
+    padding: .8rem 1.6rem;
+    background-color: var(--secondary-color);
+    border-radius: 16px;
+    color: #777777;
+    margin-right: .4rem;
+    margin-top: .8rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/* ------- SHOW ------ */
+a.button {
+    padding: .8rem 3.2rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.6rem;
+    border-radius: .4rem;
+    width: 100%;
+    margin-top: 3.2rem;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* --------- INDEX INSTRUCTORS ---------- */
+.table-container {
+    display: block;
+    padding: 4rem;
+}
+
+.table-container table {
+    border-spacing: 0;
+}
+
+.table-container thead tr th {
+    text-align: left;
+}
+
+td, th {
+    padding: 1.6rem;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+th {
+    text-transform: uppercase;
+    color: #777777;
+    font-size: 1.4rem;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr td:first-child {
+    display: grid;
+    grid-template-columns: 6.4rem 1fr;
+    align-items: center;
+}
+
+tbody tr td:nth-child(2) span {
+    padding: .8rem 1.6rem;
+    background-color: var(--secondary-color);
+    border-radius: 16px;
+    color: #777777;
+    margin-right: .4rem;
+    margin-top: .8rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+tbody tr td{
+    font-size: 1.6rem;
+}
+
+tbody tr td:first-child span {
+    width: 4.8rem;
+    height: 4.8rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 3px 1px 6px -4px black;
+    border: 2px solid white;
+}
+
+tbody tr td:last-child a,
+.table-container > a {
+    background-color: var(--primary-color);
+    padding: .8rem 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: .4rem;
+}
+
+.table-container > a {
+    display: inline-block;
+    margin-bottom: 1.6rem;
+}
+
+.table-container thead tr th:last-child,
+td:last-child {
+    text-align: center;
+}
+
+@media(max-width: 900px) {
+    .card {
+        width: 90%;
+    }
+}
