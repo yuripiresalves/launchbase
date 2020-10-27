@@ -1,8 +1,12 @@
 const { date, grade } = require('../../lib/utils')
+const Student = require('../models/Student')
 
 module.exports = {
   index(req, res) {
-    return res.render('students/index')
+
+    Student.all((students) => {
+      return res.render('students/index', { students })
+    })
   },
   create(req, res) {
     return res.render('students/create')
@@ -18,13 +22,30 @@ module.exports = {
       }
     }
 
-    return
+    Student.create(req.body, (student) => {
+      return res.redirect(`/students/${student.id}`)
+    })
   },
   show(req, res) {
-    return
+
+    Student.find(req.params.id, (student) => {
+      if (!student) return res.send('Student not found!')
+
+      student.birth = date(student.birth).birthDay
+      student.grade = grade(student.grade)
+
+      return res.render('students/show', { student })
+    })
   },
   edit(req, res) {
-    return
+
+    Student.find(req.params.id, (student) => {
+      if (!student) return res.send('Student not found!')
+
+      student.birth = date(student.birth).iso
+
+      return res.render('students/edit', { student })
+    })
   },
   update(req, res) {
 
@@ -37,9 +58,14 @@ module.exports = {
       }
     }
 
-    return
+    Student.update(req.body, () => {
+      return res.redirect(`/students/${req.body.id}`)
+    })
   },
   delete(req, res) {
-    return
+
+    Student.delete(req.body.id, () => {
+      return res.redirect(`/students`)
+    })
   },
 }
