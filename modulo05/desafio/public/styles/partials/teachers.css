@@ -143,30 +143,75 @@ tbody tr td:nth-child(2) span {
 }
 
 tbody tr td:last-child a,
-.table-container > a {
+.table-container .header a {
     background-color: var(--color-primary);
     padding: .8rem 1.6rem;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
     color: white;
     font-size: 1.2rem;
     border-radius: .4rem;
 
     transition: .2s;
-
 }
 
-.table-container > a {
+.table-container .header a {
     display: inline-block;
-    margin-bottom: 1.6rem;
+    width: 12rem;
 }
 
 tbody tr td:last-child a:hover {
     background-color: var(--color-primary-darker);
 }
 
-.table-container > a:hover {
+.table-container .header a:hover {
     background-color: var(--color-primary-darker);
+}
+
+/* ----- FILTER ----- */
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 3.2rem;
+}
+
+.header form {
+    display: grid;
+    grid-template-columns: 1fr 12rem;
+    gap: .8rem;
+}
+
+.header form input {
+    padding: .8rem 1.6rem;
+    border: 1px solid #eee;
+    outline: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.header form input:placeholder-shown {
+    font-weight: normal;
+}
+
+.header form button {
+    background-color: var(--color-primary);
+    padding: .8rem 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: .4rem;
+
+    transition: .2s;
+}
+.header form button:hover {
+    background-color: var(--color-primary-darker);
+    cursor: pointer;
 }
 
 @media(max-width: 800px) {
