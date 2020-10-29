@@ -1,36 +1,44 @@
 {% extends "layout.njk" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/styles/partials/teachers.css">
+  <link rel="stylesheet" href="/styles/partials/teachers.css">
 {% endblock head %}
 
 {% block content %}
-    <div class="card table-container">
-        <a href="/teachers/create">Novo</a>
-        <table width="100%">
-            <thead>
-                <tr>
-                    <th>Nome completo</th>
-                    <th>Acompanhamento</th>
-                    <th>Ação</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for teacher in teachers %}
-                    <tr>
-                        <td>
-                            <span style="background-image: url({{teacher.avatar_url}})"></span>
-                            {{ teacher.name }}
-                        </td>
-                        <td>
-                            {% for class in teacher.subjects_taught.split(",") %}
-                                <span>{{class}}</span>
-                            {% endfor %}
-                        </td>
-                        <td><a href="/teachers/{{teacher.id}}">Ver</a></td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
+  <div class="card table-container">
+    <a href="/teachers/create">Novo</a>
+    <table width="100%">
+      <thead>
+        <tr>
+          <th>Nome completo</th>
+          <th>Acompanhamento</th>
+          <th>Alunos</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for teacher in teachers %}
+          <tr>
+            <td>
+              <span style="background-image: url({{teacher.avatar_url}})"></span>
+              {{ teacher.name }}
+            </td>
+            <td>
+              {% for class in teacher
+                .subjects_taught
+                .split(",") %}
+                <span>{{class}}</span>
+              {% endfor %}
+            </td>
+            <td>
+              {{ teacher.total_students }}
+            </td>
+            <td>
+              <a href="/teachers/{{teacher.id}}">Ver</a>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
 {% endblock content %}
