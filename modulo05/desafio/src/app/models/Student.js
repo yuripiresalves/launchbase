@@ -6,7 +6,7 @@ module.exports = {
     db.query(`
       SELECT * 
       FROM students
-      ORDER BY name ASC`, (err, results) => {
+      `, (err, results) => {
         if (err) throw `Database Error! ${err}`
 
         callback(results.rows)
@@ -20,8 +20,9 @@ module.exports = {
         email,
         birth,
         grade,
-        hours
-      ) VALUES ($1, $2, $3, $4, $5, $6)
+        hours,
+        teacher_id
+      ) VALUES ($1, $2, $3, $4, $5, $6, $7)
       RETURNING id
     `
 
@@ -31,7 +32,8 @@ module.exports = {
       data.email,
       date(data.birth).iso,
       data.grade,
-      data.hours
+      data.hours,
+      data.teacher
     ]
 
     db.query(query, values, (err, results) => {
@@ -42,9 +44,10 @@ module.exports = {
   },
   find(id, callback) {
     db.query(`
-      SELECT * 
-      FROM students 
-      WHERE id = $1`, [id], (err, results) => {
+      SELECT students.*, teachers.name AS teacher_name 
+      FROM students
+      LEFT JOIN teachers ON (students.teacher_id = teachers.id)
+      WHERE students.id = $1`, [id], (err, results) => {
         if (err) throw `Database Error! ${err}`
 
         callback(results.rows[0])
@@ -58,8 +61,9 @@ module.exports = {
       email=($3),  
       birth=($4),  
       grade=($5),  
-      hours=($6)
-    WHERE id = $7
+      hours=($6),
+      teacher_id=($7)
+    WHERE id = $8
     `
     const values = [
       data.avatar_url,
@@ -68,6 +72,7 @@ module.exports = {
       data.birth,
       data.grade,
       data.hours,
+      data.teacher,
       data.id
     ]
 
@@ -82,6 +87,13 @@ module.exports = {
       if (err) throw `Database Error! ${err}`
 
       return callback()
+    })
+  },
+  teachersSelectOptions(callback) {
+    db.query(`SELECT name, id FROM teachers`, (err, results) => {
+      if (err) throw `Database Error! ${err}`
+
+      callback(results.rows)
     })
   }
 }
