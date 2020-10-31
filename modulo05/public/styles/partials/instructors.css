@@ -209,6 +209,36 @@ td:last-child {
     cursor: pointer;
 }
 
+/* ----------- PAGINATION -------------- */
+.table-container {
+    display: grid;
+    grid-template: 6.4rem 1fr 1.6rem / 1fr;
+}
+
+.table-container .header {
+    margin: 0;
+    align-self: start;
+}
+
+.table-container .pagination {
+    margin: 0;
+    align-self: end;
+    justify-self: center;
+}
+
+.pagination a,
+.pagination span {
+    margin-right: 1.6rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.pagination a:hover {
+    filter: brightness(.5);
+    border-bottom: 1px solid var(--primary-color);
+}
+
 
 @media(max-width: 900px) {
     .card {
