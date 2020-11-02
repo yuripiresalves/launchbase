@@ -6,6 +6,7 @@
 
 {% block content %}
   <div class="card table-container">
+
     <div class="header">
       <a href="/teachers/create">Novo</a>
       <form action="/teachers" method="get">
@@ -52,5 +53,12 @@
         {% endfor %}
       </tbody>
     </table>
+
+    <div class="pagination"
+        data-page={{pagination.page}}
+        data-total={{pagination.total}}
+        data-filter={{filter}}
+    ></div>
+
   </div>
 {% endblock content %}

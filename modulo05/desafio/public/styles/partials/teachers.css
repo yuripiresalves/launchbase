@@ -214,6 +214,46 @@ tbody tr td:last-child a:hover {
     cursor: pointer;
 }
 
+/* ------ PAGINATION --------- */
+.table-container {
+    display: grid;
+    grid-template: 6.4rem 1fr 1.6rem / 1fr;
+}
+
+.table-container .header {
+    margin: 0;
+    align-self: start;
+}
+
+.table-container .pagination {
+    margin: 0;
+    justify-self: center;
+    align-self: end;
+}
+
+.pagination a,
+.pagination span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-primary-darker);
+    background-color: var(--color-secondary);
+    padding: .8rem 1.6rem;
+    border-radius: .4rem;
+    margin-right: .6rem;
+
+    transition: .2s;
+}
+
+.pagination span {
+    background-color: initial;
+}
+
+.pagination a:hover,
+.pagination span:hover {
+    filter: brightness(1.05);
+}
+
 @media(max-width: 800px) {
     .card {
         width: 90%;
