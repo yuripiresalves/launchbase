@@ -58,7 +58,7 @@
           {{ product.price }}
 
           {% if product.price !== product.oldPrice %}
-            <span class="old">R$ 89,00</span>
+            <span class="old">{{ product.oldPrice }}</span>
           {% endif %}
         </div>
 
