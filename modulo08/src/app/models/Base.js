@@ -3,15 +3,17 @@ const db = require('../../config/db')
 function find(filters, table) {
   let query = `SELECT * FROM ${table}`
 
+  if (filters) {
     Object.keys(filters).map(key => {
       //WHERE | OR
       query += ` ${key}`
-
+  
       Object.keys(filters[key]).map(field => {
         query += ` ${field} = '${filters[key][field]}'`
       })
     })
-
+  }
+  
     return db.query(query)
 }
 
@@ -42,7 +44,7 @@ const Base = {
 
       Object.keys(fields).map(key => {
         keys.push(key)
-        values.push(fields[key])
+        values.push(`'${fields[key]}'`)
       })
 
       const query = `INSERT INTO ${this.table} (${keys.join(',')})
